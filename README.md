@@ -1,42 +1,171 @@
-# Environmental and Wildlife Monitoring System  
-**Hackathon Project | Arduino Nano ESP32**
+Green Heart Monitor 
 
-## Introduction
+ 
 
-Our goal was to design a compact, real-time monitoring system that tracks both environmental changes and animal health metrics. The data collected would be made available to scientists to support research and inform conservation strategies.
+Table of Contents
 
-## Our Plan
+Overview
 
-We set out to create a multi-sensor device that could:
+Key Features
 
-- Monitor environmental conditions and animal health indicators  
-- Allow Real time access to data  
-- Identify environmental changes and behavioral patterns in animals 
+Hardware Components
 
-The system would be deployed in natural habitats and provide valuable data for long-term ecological studies.
+Software Setup
 
-## Our Execution
+Usage
 
-We used the **Arduino Nano ESP32** as the foundation of our device due to its small size, low power usage, and built-in Wi-Fi. The following sensors were incorporated into the system:
+Project Architecture
 
-- **Water Sensor** – Detects water presence and flooding conditions  
-- **Light Sensor** – Measures light levels and exposure trends  
-- **Heartbeat Sensor** – Monitors animal heart rate  
-- **Temperature Sensor** – Measures ambient temperature  
-- **GPS Sensor** – Records geographic location of data collection  
-- **Accelerometer** – Tracks motion and activity levels  
-- **Humidity Sensor** – Detects atmospheric moisture  
+Future Work
 
-To make the data accessible in real time, we hosted a lightweight web server directly on the ESP32. This allowed users to connect to the device over a local Wi-Fi network and view sensor readings through a live dashboard.
+License
 
-## Conclusion
+Overview
 
-This project demonstrates the potential of embedded IoT solutions in environmental and wildlife monitoring. By integrating multiple sensors with a real-time data interface, our system offers a reliable and scalable tool for scientists studying ecosystems and animal behavior. The ability to remotely access live environmental data can lead to more responsive and effective conservation strategies.
+Green Heart Monitor is a portable, low-power IoT device built on the Arduino Nano ESP32. It provides:
 
-## Future Plans
+Real-time tracking of environmental and animal health metrics
 
-- Integrate with cloud storage platforms (e.g., Firebase, AWS) for remote data logging and historical analysis  
-- Improve power efficiency and battery life for long-term deployment in remote areas  
-- Develop a wearable version for tracking smaller wildlife species  
-- Build a more advanced web interface for data visualization and analysis  
-- Explore the use of machine learning for anomaly detection and predictive modeling  
+Web-based dashboard accessible over Wi‑Fi
+
+On-board OLED display for local monitoring
+
+Use this system for ecological research, wildlife conservation, and field data collection.
+
+Key Features
+
+⚙️ Multi-Sensor Integration: water level, ambient light, humidity, temperature, GPS location, and heartbeat.
+
+🌐 Live Dashboard: Embedded HTTP server serves JSON & HTML to any Wi‑Fi–connected device.
+
+📶 SoftAP Mode: ESP32 hosts its own Wi‑Fi network—no router needed.
+
+🖥️ OLED Display: Instant local readout of critical data.
+
+🔋 Field-Ready: Optimized for battery operation and remote deployment.
+
+Hardware Components
+
+Sensor
+
+Pin
+
+Description
+
+Water Level Sensor
+
+A1
+
+Detects flooding or water presence
+
+Light Sensor
+
+A0
+
+Measures ambient light intensity
+
+DHT11 (Temp & Humid)
+
+D2
+
+Records temperature & humidity
+
+GPS Module
+
+RX/TX
+
+Captures latitude & longitude
+
+Pulse Sensor
+
+A3
+
+Monitors animal heart rate
+
+OLED Display
+
+I²C
+
+Local visual feedback (SSD1306 128x64)
+
+Arduino Nano ESP32
+
+—
+
+Main controller with built-in Wi-Fi
+
+Software Setup
+
+Install Arduino IDE v1.8.13 or later.
+
+Add ESP32 board support:
+
+Go to File → Preferences
+
+Under Additional Boards Manager URLs, add:
+
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+Install Libraries via Sketch → Include Library → Manage Libraries:
+
+Adafruit GFX
+
+Adafruit SSD1306
+
+Adafruit Unified Sensor
+
+DHT sensor library by Adafruit
+
+TinyGPS++
+
+PulseSensor Playground
+
+SoftwareSerial
+
+Open the GreenHeartMonitor.ino sketch in Arduino IDE.
+
+Select Arduino Nano ESP32 board and correct COM port.
+
+Upload the sketch.
+
+Monitor the Serial output at 115200 baud for startup messages.
+
+Usage
+
+Power on the device. The OLED splash screen will confirm initialization.
+
+Connect your PC or smartphone to the ESP32 network:
+
+SSID: ESP32Test
+
+Password: test1234
+
+Open a browser to:  http://192.168.4.1/
+
+View live readings in the web dashboard. Click Refresh Data or wait for auto‑updates every 10 seconds.
+
+Project Architecture
+
+flowchart LR
+  Sensors --> ESP32
+  ESP32 --> OLED[OLED Display]
+  ESP32 --> SoftAP[Wi-Fi SoftAP]
+  SoftAP --> Browser[Web Browser]
+  ESP32 --> API[/json API]
+  Browser --> API
+
+Future Work
+
+🔌 Cloud Integration: Push data to Firebase or AWS for historical logging.
+
+☀️ Power Optimization: Solar/battery enhancements for long-term field use.
+
+📦 Miniaturization: Wearable tag for small wildlife.
+
+📊 Advanced UI: Enhanced charts and analytics.
+
+🤖 Machine Learning: On-device anomaly detection and alerts.
+
+License
+
+This project is released under the MIT License. See LICENSE for details.
