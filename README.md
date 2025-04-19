@@ -1,4 +1,4 @@
-# Green Heart Monitor 🚀
+# Green Heart Monitor 💚
 
 A portable, low-power IoT device built on the Arduino Nano ESP32 for real-time monitoring of environmental conditions and animal health metrics.
 
@@ -36,6 +36,8 @@ Perfect for ecological research, wildlife conservation, and field data collectio
 - 📶 **SoftAP Mode**: No router needed — ESP32 hosts its own network.
 - 🖥️ **OLED Display**: Real-time visual feedback on the device.
 - 🔋 **Field-Ready**: Optimized for battery-powered and remote environments.
+
+![image](https://github.com/user-attachments/assets/e83543b4-a64c-41f1-bdfa-0e6ff9fe04e6)
 
 ---
 
@@ -87,14 +89,19 @@ Perfect for ecological research, wildlife conservation, and field data collectio
 5. View live sensor data. Click **Refresh Data** or wait for auto-updates every 10 seconds.
 
 ---
+## 🔮 Future Work
 
-## 🧱 Project Architecture
+- 🔌 **Cloud Integration**  
+  Push collected data to cloud platforms like **Firebase** or **AWS** for historical logging, remote access, and analytics.
 
-```mermaid
-flowchart LR
-  Sensors --> ESP32
-  ESP32 --> OLED[OLED Display]
-  ESP32 --> SoftAP[Wi-Fi SoftAP]
-  SoftAP --> Browser[Web Browser]
-  ESP32 --> API[/json API]
-  Browser --> API
+- ☀️ **Power Optimization**  
+  Integrate **solar charging** systems and optimize code for low-power consumption, enabling continuous field operation.
+
+- 📦 **Miniaturization**  
+  Redesign the hardware into a **compact, wearable tag** suitable for smaller wildlife species without disturbing behavior.
+
+- 📊 **Advanced UI**  
+  Improve the web dashboard with **interactive charts**, mobile responsiveness, and visual insights for researchers.
+
+- 🤖 **Machine Learning**  
+  Implement lightweight models for **anomaly detection**, behavior classification, and real-time alerts directly on the ESP32.
