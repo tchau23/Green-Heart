@@ -85,7 +85,13 @@ Perfect for ecological research, wildlife conservation, and field data collectio
    - **SSID**: `ESP32Test`
    - **Password**: `test1234`
 4. Open a web browser and go to:  
-   `http://192.168.4.1/`
+   `http://192.168.4.1/` 
+
+Or use the QR Code:
+
+![image](https://github.com/user-attachments/assets/a537dea3-5fe8-46d6-80a7-6897e31cb49d)
+
+
 5. View live sensor data. Click **Refresh Data** or wait for auto-updates every 10 seconds.
 
 ---
