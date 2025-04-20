@@ -4,19 +4,6 @@ A portable, low-power IoT device built on the Arduino Nano ESP32 for real-time m
 
 ---
 
-## 📚 Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Hardware Components](#hardware-components)
-- [Software Setup](#software-setup)
-- [Usage](#usage)
-- [Project Architecture](#project-architecture)
-- [Future Work](#future-work)
-- [License](#license)
-
----
-
 ## 🧭 Overview
 
 **Green Heart Monitor** is a portable, battery-friendly device based on the **Arduino Nano ESP32**. It provides:
