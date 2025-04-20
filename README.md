@@ -24,7 +24,8 @@ Perfect for ecological research, wildlife conservation, and field data collectio
 - 🖥️ **OLED Display**: Real-time visual feedback on the device.
 - 🔋 **Field-Ready**: Optimized for battery-powered and remote environments.
 
-![image](https://github.com/user-attachments/assets/e83543b4-a64c-41f1-bdfa-0e6ff9fe04e6)
+![image](https://github.com/user-attachments/assets/01938320-d6e8-44cd-a420-b53ce298b5ed)
+
 
 ---
 
