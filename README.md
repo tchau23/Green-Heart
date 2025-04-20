@@ -1,6 +1,6 @@
 # Green Heart Monitor 💚
 
-A portable, low-power IoT device built on the Arduino Nano ESP32 for real-time monitoring of environmental conditions and animal health metrics.
+A portable, low-power IoT device built on the Arduino Nano ESP32 for real-time monitoring of environmental conditions and animal/people health metrics.
 
 ---
 
@@ -62,6 +62,8 @@ Perfect for ecological research, wildlife conservation, and field data collectio
 6. Upload the sketch.
 7. Open **Serial Monitor** at `115200` baud to confirm device startup.
 
+![image](https://github.com/user-attachments/assets/c7763c35-83a0-4dfb-b9c9-77c2d5169af3)
+
 ---
 
 ## 🚀 Usage
@@ -98,3 +100,6 @@ Or use the QR Code:
 
 - 🤖 **Machine Learning**  
   Implement lightweight models for **anomaly detection**, behavior classification, and real-time alerts directly on the ESP32.
+
+![image](https://github.com/user-attachments/assets/c8872a9b-cdeb-4cd4-b00d-cc5988a4be28)
+
